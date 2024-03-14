@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcurt icon" href="2043651.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+
+<header>      <h1>Lista de Tarefas </h1></header>
+
+    <div id="div1">
+  
+
+        <input type="text" id="taskInput" placeholder="Digite uma Tarefa">
+
+        <button onclick="addTask()" id="button1"> Adicionar Tarefa</button>
+
+       </div>
+   
+      
+        
+    <ul id="taskList">
+        <!-- Lista de tarefas será inserida aqui -->
+    </ul>
+
+
+
+    <script>
+
+
+        
+
+        function addTask() {
+
+
+
+            var taskInput = document.getElementById("taskInput");
+            var taskText = taskInput.value.trim();
+
+            if (taskText !== "") {
+                var taskList = document.getElementById("taskList");
+                var li = document.createElement("li");
+                li.className = "taskItem";
+                li.innerHTML = taskText + "<button onclick='removeTask(this)' id='button2'>Remover</button>";
+                taskList.appendChild(li);
+                taskInput.value = "";
+            }
+            else {
+                alert("Por favor, Insira uma tarefa válida")
+            }
+
+        }
+
+
+        function removeTask(button) {
+            var li = button.parentNode;
+            var ul = li.parentNode;
+            ul.removeChild(li)
+        }
+
+        document.getElementById("taskInput").addEventListener("keypress", function (event) {
+
+
+            if (event.key === "Enter") {
+                addTask();
+            }
+        });
+
+
+
+
+
+    </script>
+
+<footer>
+
+    <div id="div"> <h2>Feito por Artur</h2> <div class="div3"><span class="span1"> A</span> <span class="span2">_ </span> <span
+             class="span3"> G</span></span>
+         </div></div>
+
+ </footer>
+
+
+
+</body>
+
+</html>

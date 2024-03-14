@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: f1;
+    src: url(Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+    font-family: f2;
+    src: url(Nexa-Heavy.ttf);
+}
+
+
+@font-face {
+    font-family: f3;
+    src: url(Altone\ Trial-BoldOblique.ttf);
+}
+
+
+body {
+
+    background-image: url(paper-1914901_1280.jpg);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#div1 {
+    border: 3px solid rgb(165, 126, 42);
+    background-color: rgba(201, 160, 99, 0.712);
+    font-size: x-large;
+    margin: 3%;
+    margin-top: 2%;
+    font-family: f1;
+    padding: 10px;
+    width: 350px;
+}
+
+input {
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    font-family: f3;
+    background-color: rgb(255, 249, 241);
+}
+
+#button1 {
+    font-size: medium;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    font-family: f3;
+    background-color: rgb(255, 198, 128);
+}
+
+#button2 {
+    margin-left: 10px;
+    font-size: small;
+    border-radius: 3px;
+    border: none;
+    padding: 2px;
+    font-family: f3;
+    background-color: rgba(255, 198, 128, 0.466);
+}
+
+#button2:hover {
+
+    cursor: pointer;
+
+}
+
+#button1:hover {
+
+    cursor: pointer;
+
+}
+
+    li{
+font-family: f3;
+margin-top: 2%;
+margin-left: 2%;
+
+    }
+
+
+    .div2{
+
+background-color: red;
+
+    }
+
+    .lista{
+
+width: 100%;
+    }
+    header{
+        font-family: f1;
+        font-size: larger;
+        background-color: rgba(179, 129, 64, 0.603);
+        padding: 10px;
+    }
+    
+footer{
+ position: absolute;
+    width: 100%;
+    font-family: f2;
+    font-size: medium ;
+    margin-top: 50px;
+    margin-top: 30.20%;
+    }
+    
+     
+    .span1{
+        color: white;
+        font-size: medium;
+        }
+        
+        .span2{
+        
+        color: gray;
+        font-size: medium;
+        }
+        
+        .span3{
+        color: black;
+        font-size: medium
+        
+        }
+        
+        .div3{
+        display: flex;
+    margin-left: 10px;
+        background-color: red;
+        max-width: 50px;
+        padding: 0.5%;
+        border-radius: 5px;
+        
+        }
+    
+        #div{
+     
+    display: flex;
+    font-size: medium;
+    
+        }
